@@ -7,7 +7,7 @@ import React from "react";
 
 export function LeftSide() {
   return (
-    <div>
+    <div className="sticky top-0 h-screen">
       <div className="flex flex-col sm:flex-row items-center sm:items-start">
         <Avatar className="w-16 h-16 mb-4 sm:mb-0 sm:ml-4 md:ml-16 mt-4 sm:mt-16">
           <AvatarImage src={selfie.src} />
