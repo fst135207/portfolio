@@ -3,6 +3,7 @@ import selfie from "@/public/selfie.jpg"
 import Snowypin from "@/public/snowypin.svg"
 import { Github, Linkedin } from "lucide-react"
 import { SiLeetcode } from "react-icons/si"
+import React from "react";
 
 export function LeftSide() {
   return (
