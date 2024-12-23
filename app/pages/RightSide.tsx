@@ -1,8 +1,27 @@
 import React from "react";
 import { ExperienceCard } from '@/components/ui/ExperienceCard';
 import { ProjectCard } from '@/components/ui/ProjectCard';
+import { getRepoStats } from "@/utilis/github";
 
-export function RightSide() {
+export async function RightSide() {
+    const projects = [
+        {
+          name: "Project 1",
+          owner: "fst135207",
+          description: "Describiton Project 1",
+          language: "Shell",
+          githubUrl: "https://github.com/fst135207/placeholder"
+        },
+        
+      ];
+    
+      const projectsWithStats = await Promise.all(
+        projects.map(async (project) => {
+          const { stars, forks } = await getRepoStats(project.owner, project.name);
+          return { ...project, stars, forks };
+        })
+      );
+
   return (
     <div className="flex flex-col gap-6 sm:mt-16">
       {/* Kleine Beschreibung */}
@@ -117,43 +136,13 @@ export function RightSide() {
             A collection of projects I've worked on
           </p>
         </div>
-        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="transition-all duration-300 hover:translate-y-[-4px]">
-            <ProjectCard 
-              name="Project 1"
-              description="Describiton Project 1"
-              language="Shell"
-              githubUrl="https://github.com/fst135207"
-            />
+        {projectsWithStats.map((project) => (
+          <div key={project.name} className="transition-all duration-300 hover:translate-y-[-4px]">
+            <ProjectCard {...project} />
           </div>
-          
-          <div className="transition-all duration-300 hover:translate-y-[-4px]">
-            <ProjectCard 
-              name="Project 2"
-              description="Describiton Project 2"
-              language="Powershell"
-              githubUrl="https://github.com/fst135207"
-            />
-          </div>
-          
-          <div className="transition-all duration-300 hover:translate-y-[-4px]">
-            <ProjectCard 
-              name="Project 3"
-              description="Describiton Project 3"
-              language="PowerShell"
-              githubUrl="https://github.com/fst135207"
-            />
-          </div>
-          <div className="transition-all duration-300 hover:translate-y-[-4px]">
-            <ProjectCard 
-            name="Project 4"
-              description="Describiton Project 4"
-            language="PowerShell"
-            githubUrl="https://github.com/fst135207"
-            />
-        </div>
-        </div>
+        ))}
+      </div>
     </div>
   );
-} 
+}

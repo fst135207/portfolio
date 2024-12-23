@@ -3,6 +3,7 @@ interface ProjectCardProps {
   description: string;
   language: string;
   githubUrl: string;
+  owner: string;
   stars?: number;
   forks?: number;
 }
