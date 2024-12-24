@@ -157,6 +157,42 @@ export async function RightSide() {
           </div>
         ))}
       </div>
-    </div>
+
+      {/* Kontakt Sektion */}
+          <div className="relative z-10">
+            <h2 className="text-lg font-semibold">Contact</h2>
+            <p className="text-sm text-white mt-2">
+              Feel free to send me a message if you are interested in getting in touch. You can reach me through{' '}
+              <a 
+                href="https://www.linkedin.com/in/felix-stalder-6b20472a6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                LinkedIn
+              </a>{' '}
+              or directly via{' '}
+              <a 
+                href="mailto:felix.stalder.bsu@gmail.com"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                E-Mail
+              </a>
+              .
+            </p>
+            <p className="text-sm text-white mt-2">
+              If you are curious about my further development, you can follow me on{' '}
+              <a 
+                href="https://github.com/fst135207" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                Github
+              </a>
+              .
+            </p>
+          </div>
+        </div>
   );
 }

@@ -31,30 +31,36 @@ export function ExperienceCard({
       >
         {/* Front */}
         <div className="absolute w-full h-full backface-hidden">
-          <div className="relative bg-zinc-900/50 p-4 rounded-lg border border-zinc-800 h-full">
-            <h3 className="text-blue-400">{company}</h3>
-            <p className="text-sm text-zinc-400">{role}</p>
-            <p className="text-sm text-zinc-300 mt-2">{description}</p>
-            <div className="flex flex-wrap gap-2 mt-2">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="text-xs bg-zinc-800 px-2 py-1 rounded"
-                >
-                  {skill}
-                </span>
-              ))}
+          <div className="relative bg-zinc-900/50 p-4 rounded-lg border border-zinc-800 h-full flex flex-col">
+            <div className="flex-grow">
+              <h3 className="text-blue-400">{company}</h3>
+              <p className="text-sm text-zinc-400">{role}</p>
+              <p className="text-sm text-zinc-300 mt-2">{description}</p>
             </div>
-            {projects && (
-              <div className="absolute bottom-4 right-4">
+            
+            <div className="flex justify-between items-end">
+              {/* Skills unten links */}
+              <div className="flex flex-wrap gap-2 max-w-[70%]">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="text-xs bg-zinc-800 px-2 py-1 rounded"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+              
+              {/* Show Projects Button unten rechts */}
+              {projects && (
                 <button
                   onClick={() => setIsFlipped(true)}
                   className="text-sm text-blue-400 hover:text-blue-300 flex items-center gap-1"
                 >
                   Show Projects
                 </button>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
 
