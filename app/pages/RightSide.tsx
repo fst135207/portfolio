@@ -6,11 +6,25 @@ import { getRepoStats } from "@/utilis/github";
 export async function RightSide() {
     const projects = [
         {
-          name: "Project 1",
+          name: "XAUUSD-Forecast",
           owner: "fst135207",
-          description: "Describiton Project 1",
-          language: "Shell",
-          githubUrl: "https://github.com/fst135207/placeholder"
+          description: "Python-based XAUUSD forecaster uses the ARMA Model to predict gold prices (XAU/USD)",
+          language: "Python",
+          githubUrl: "https://github.com/fst135207/XAUUSD-Forecast.git"
+        },
+        {
+          name: "Portfolio",
+          owner: "fst135207",
+          description: "Current portfolio built with Next.js and TypeScript",
+          language: "TypeScript",
+          githubUrl: "https://github.com/fst135207/portfolio.git"
+        },
+        {
+          name: "Pixoo",
+          owner: "fst135207",
+          description: "Programming Pixoo64 pixel display with python (adaptiv weather Icons, temperature, date, time)",
+          language: "Python",
+          githubUrl: "https://github.com/fst135207/pixoo.git"
         },
         
       ];

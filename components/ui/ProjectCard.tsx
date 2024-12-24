@@ -21,7 +21,7 @@ export function ProjectCard({
       href={githubUrl}
       target="_blank" 
       rel="noopener noreferrer"
-      className="block p-6 bg-zinc-900/50 hover:bg-zinc-900/80 border border-zinc-800 transition-colors w-full h-[150px]"
+      className="block p-6 bg-zinc-900/50 hover:bg-zinc-900/80 border border-zinc-800 transition-colors w-full h-[200px]"
     >
       <div className="flex items-center gap-2 mb-2">
         <svg className="w-4 h-4 text-zinc-400" viewBox="0 0 16 16" fill="currentColor">
