@@ -156,7 +156,7 @@ export async function RightSide() {
         <div className="relative z-10">
         <h2 className="text-lg font-semibold">My Projects</h2>
           <p className="text-sm text-zinc-300">
-            A collection of projects I've worked on
+            A collection of projects I&apos;'ve worked on
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
