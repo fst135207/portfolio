@@ -41,12 +41,7 @@ export async function RightSide() {
       {/* Kleine Beschreibung */}
       <div className="space-y-2">
         <p className="text-sm text-zinc-300">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-          voluptua. At vero eos et accusam et Lorem ipsum dolor sit amet,
-          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-          labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-          accusam et
+        I’m passionate about growing each day, whether it’s through mastering new tech skills, solving complex problems, or improving my physical fitness. I believe in taking small steps forward, whether that’s advancing my knowledge in tech or pushing my limits in workouts. I’m always excited to learn, create, and level up both mentally and physically!
         </p>
       </div>
 
@@ -76,12 +71,24 @@ export async function RightSide() {
                   company="Identitas AG"
                   role="Platform Engineer"
                   description="Throughout the apprenticeship I was able to work in different areas of fields where I was able to gain and learn many new skills."
-                  skills={['Linux', 'Azure', 'Powershell', 'SQL']}
+                  skills={['Linux', 'Azure', 'Docker', 'SQL', 'Powershell', 'Network and System Administration', 'Virtualization']}
                   projects={[
                     {
-                      name: "Infrastructure Automation",
-                      description: "Automated deployment of Azure resources using Terraform",
-                      github: "https://github.com/fst135207"
+                      name: "System Administration and Maintenance of Student Learning Environment",
+                      description: "Includes setting up ESXI Hypervisor, Backups, Vmware HA, Firewall & Switch configurations and a lot of different stuff",
+                    },
+                    {
+                      name: "Powershell Scripts",
+                      description: "Created a lot of different powershell scripts for System Administration e.g Monitoring scripts for PRTG or AD-User management",
+                    },
+                    {
+                      name: "Automated Deployment of Microsoft Dev Boxes",
+                      description: "Created a Azure Pipeline to automatically deploy Microsoft Dev Boxes for National Future Day Event, provided a ready-to-use environment for students to use.",
+                    },
+                    {
+                      name: "Custom Pixoo Clock",
+                      description: "Created Custom Pixoo64 pixel display with python (adaptiv weather Icons, temperature, date, time)",
+                      github: "https://github.com/fst135207/pixoo.git"
                     },
                   ]}
                 />
@@ -93,7 +100,7 @@ export async function RightSide() {
               <div className="absolute left-[-3px] top-[-18px] flex items-center">
                 <div className="w-2 h-2 rounded-full bg-blue-400" />
                 <span className="text-xs text-zinc-400 ml-5">
-                  01/08/2022 - Present
+                  01/08/2021 - 01/08/2022
                 </span>
               </div>
 
@@ -101,13 +108,12 @@ export async function RightSide() {
                 <ExperienceCard
                   company="Bict AG"
                   role="Platform Engineer"
-                  description="Throughout the apprenticeship I was able to work in different areas of fields where I was able to gain and learn many new skills."
-                  skills={['Linux', 'Azure', 'Powershell', 'SQL']}
+                  description="During the start of my apprenticeship at Bict AG, I focused on building a strong foundational understanding of IT concepts and technologies."
+                  skills={['Linux', 'Arduino', 'Powershell', 'SQL', 'Bash']}
                   projects={[
                     {
-                      name: "Infrastructure Automation",
-                      description: "Automated deployment of Azure resources using Terraform",
-                      github: "https://github.com/fst135207"
+                      name: "Arduino Device for Room Temperature and Humidity Monitoring",
+                      description: "Arduino-based device is designed to monitor room temperature and humidity in real time. It utilizes sensors like the DHT11 or DHT22 to collect environmental data",
                     },
                   ]}
                 />
@@ -118,7 +124,7 @@ export async function RightSide() {
               <div className="absolute left-[-3px] top-[-18px] flex items-center">
                 <div className="w-2 h-2 rounded-full bg-blue-400" />
                 <span className="text-xs text-zinc-400 ml-5">
-                  01/08/2022 - Present
+                  01/08/2020 - 01/08/2021
                 </span>
               </div>
 
@@ -126,13 +132,16 @@ export async function RightSide() {
                 <ExperienceCard
                   company="10 ICT-Schuljahr"
                   role="Platform Engineer"
-                  description="Throughout the apprenticeship I was able to work in different areas of fields where I was able to gain and learn many new skills."
-                  skills={['Linux', 'Azure', 'Powershell', 'SQL']}
+                  description="During the 10th ICT school year, I gained practical experience working with tools like Office 365 and Adobe software, including Illustrator, Photoshop, and Premiere Pro, to support design and multimedia projects."
+                  skills={['Office 365', 'Adobe', 'Windows']}
                   projects={[
                     {
-                      name: "Infrastructure Automation",
-                      description: "Automated deployment of Azure resources using Terraform",
-                      github: "https://github.com/fst135207"
+                      name: "Worked on different Adobe Projects",
+                      description: "Illustrator, Photoshop, Premiere Pro",
+                    },
+                    {
+                      name: "Build PC & Setting up Windows 10",
+                      description: "Builded PC together and installed Windows 10",
                     },
                   ]}
                 />
