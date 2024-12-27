@@ -15,7 +15,7 @@ export function LeftSide() {
         </Avatar>
         <div className="flex flex-col text-center sm:text-left">
           <h1 className="text-xl sm:text-2xl font-bold sm:ml-5 mt-2 sm:mt-16">
-            Hi, I&apos;'m Felix
+            Hi, I&apos;m Felix
           </h1>
           <p className="text-sm sm:text-base sm:ml-5 mt-1">
             Im a Platform Engineer working currently at Identitas AG
