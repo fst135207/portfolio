@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import selfie from "@/public/selfie.jpg"
 import Snowypin from "@/public/snowypin.svg"
 import { Github, Linkedin } from "lucide-react"
+import hackthebox from "@/public/hackthebox.png"
 import { SiLeetcode } from "react-icons/si"
 import React from "react";
 
@@ -34,6 +35,9 @@ export function LeftSide() {
               </a>
               <a href="https://github.com/fst135207" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 hover:text-gray-600 transition-colors" />
+              </a>
+              <a href="https://app.hackthebox.com/profile/2102850" target="_blank" rel="noopener noreferrer">
+                <hackthebox className="w-5 h-5 hover:text-green-600 transition-colors" />
               </a>
             </div>
           </div>
