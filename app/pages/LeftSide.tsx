@@ -37,7 +37,7 @@ export function LeftSide() {
                 <Github className="w-5 h-5 hover:text-gray-600 transition-colors" />
               </a>
               <a href="https://app.hackthebox.com/profile/2102850" target="_blank" rel="noopener noreferrer">
-                <img src={hackthebox.src} alt="HackTheBox" className="w-8 h-8 hover:text-green-600 transition-colors" />
+                <img src={hackthebox.src} alt="HackTheBox" className="w-8 h-8 mb-2 hover:text-green-600 transition-colors" />
               </a>
             </div>
           </div>
