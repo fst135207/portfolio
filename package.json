@@ -8,7 +8,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start",
+    "start": "next start -p 8080",
     "lint": "next lint",
     "ci-check": "yarn format:diff",
     "clean": "yarn cache clean && yarn install",
